@@ -1,0 +1,16 @@
+:root {
+    --blue-logo-color: rgb(33,150,243,1);
+    --black-logo-color: rgb(0,0,0,1);
+    --black-text: rgb(33,33,33,1);
+    --gray-text: rgb(117,117,117,1);
+    --white-text: rgb(255,255,255,1);   
+
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+
+}
+
