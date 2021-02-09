@@ -1,16 +1,128 @@
 :root {
-    --blue-logo-color: rgb(33,150,243,1);
+
+    /* text */
+    --blue-logo-color-header: rgb(33,150,243,1);
     --black-logo-color: rgb(0,0,0,1);
     --black-text: rgb(33,33,33,1);
-    --gray-text: rgb(117,117,117,1);
+    --grey-text: rgb(117,117,117,1);
     --white-text: rgb(255,255,255,1);   
 
-
+    /* backgroung */
+    --white-backgroung-header: rgb(255,255,255,1);
+    --grey-background-hero: rgb(47,48,58,1);
+    --blue-button: rgb(33,150,243,1);
+    --grey-button: rgb(245,244,250,1);
+    --team-section-color: rgb(245,244,250,1);
 }
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* header section */
+
+header {
+    background-color: var(--white-backgroung-header);
+}
 
 .logo {
     font-family: 'Raleway', sans-serif;
-
+    color: var(--black-logo-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.web {
+    color: var(--blue-logo-color-header);
+}
+
+.navigation-title {
+    color: var(--black-text);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+}
+
+.active-title {
+    color: var(--blue-logo-color-header);
+}
+
+.navigation-title:hover {
+    color: var(--blue-logo-color-header);
+}    
+
+.navigation-title:focus {
+    color: var(--blue-logo-color-header);
+}  
+
+.address-title {
+    color: var(--grey-text);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+}
+
+.address-title:hover {
+    color: var(--blue-logo-color-header);
+}    
+    
+.address-title:focus {
+    color: var(--blue-logo-color-header);
+}  
+
+
+/* hero */
+.hero-section {
+    background-color: var(--grey-background-hero);
+}
+
+.hero-section > h1 {
+    color: var(--white-text);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-section > button {
+    background-color: var(--blue-button);
+    color: var(--white-text);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
